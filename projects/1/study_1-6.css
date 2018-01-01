@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media(min-width:768px){
+
+	.boxA:after{
+		content:"";
+		display:block;
+		clear:both;
+	}
+	
+	.boxB{
+		float:left;
+		width:80%;
+	}
+	
+	.box4{
+		float:left;
+		width:20%;
+	}
+
+}
+
+@media(min-width:600px){
+
+	.boxB:after{
+		content:"";
+		display:block;
+		clear:both;
+	}
+	
+	.box2{
+		float:right;
+		width:80%;
+	}
+	.box3{
+		float:left;
+		width:20%;
+	}
+
+}
