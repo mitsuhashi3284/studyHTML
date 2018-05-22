@@ -35,7 +35,7 @@ body	{margin: 0;
 
 
 /* ヘッダー画像 */
-.topimg	{max-width: 100%;
+.topimg	{width: 100%;
 	height: auto;
 	vertical-align: bottom}
 
@@ -59,10 +59,26 @@ body	{margin: 0;
 
 .news li a:hover	{background-color: #eeeeee}
 
-.news time	{margin-right: 10px;
+.news time	{
 	color: #888888;
 	font-weight: bold}
 
+.news a:after {
+	content:"";
+	display: block;
+	clear: both;
+}
+
+.news time{
+	float: left;
+	width: 60px;
+}
+
+.news .text{
+	float: none;
+	width: auto;
+	margin-left: 60px
+}
 
 
 /* コピーライト */
@@ -116,4 +132,18 @@ body	{margin: 0;
 
 /* ########### 1190px以上 ########### */
 @media (min-width: 1190px) {
+
+/* 全体の横幅を固定 */
+.box3, .box4 .boxA-inner, .box5-inner{
+	width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* BOXAの下に罫線を挿入 */
+.boxA {
+	margin-bottom: 20px;
+	border-bottom: solid 1px #dddddd;
+}
+
 }
