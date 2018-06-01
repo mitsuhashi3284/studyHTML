@@ -12,7 +12,8 @@ body	{margin: 0;
 .site h1	{margin: 0;
 	font-size: 30px}
 
-.site img {border:none}
+.site img	{border: none}
+
 
 /* ナビゲーション */
 .menu ul	{margin: 0;
@@ -36,14 +37,14 @@ body	{margin: 0;
 
 
 /* ヘッダー画像 */
-.topimg	{width: 100%;
+.topimg	{max-width: 100%;
 	height: auto;
 	vertical-align: bottom}
 
 
 /* お知らせ */
-.news {padding: 20px;
-border: solid 5px #dddddd}
+.news	{padding: 20px;
+	border: solid 5px #dddddd}
 
 .news h1	{margin-top: 0;
 	margin-bottom: 5px;
@@ -63,52 +64,20 @@ border: solid 5px #dddddd}
 
 .news li a:hover	{background-color: #eeeeee}
 
-.news time	{
-	color: #888888;
+.news time	{color: #888888;
 	font-weight: bold}
 
-.news a:after {
-	content:"";
+.news a:after	{content: "";
 	display: block;
-	clear: both;
-}
+	clear: both}
 
-.news time{
-	float: left;
-	width: 60px;
-}
+.news time	{float: left;
+	width: 60px}
 
-.news .text{
-	float: none;
+.news .text	{float: none;
 	width: auto;
-	margin-left: 60px
-}
+	margin-left: 60px}
 
-
-/* コピーライト */
-.copyright p	{margin: 0;
-	color: #666666;
-	font-size: 14px}
-
-
-/* ボックスの左右 */
-.boxA, .box4, .box5
-	{padding-left: 15px;
-	padding-right: 15px}
-
-
-/* BOX5をバーの形にする */
-.box5	{padding-top: 15px;
-	padding-bottom: 15px;
-	background-color: #dddddd}
-
-
-/* ボックスの上下 */
-.boxA	{padding-top: 20px;
-	padding-bottom: 10px}
-
-.box4	{padding-top: 20px;
-	padding-bottom: 20px}
 
 /* SNSメニュー */
 .follow ul	{margin: 0;
@@ -123,17 +92,53 @@ border: solid 5px #dddddd}
 	font-size: 14px;
 	text-decoration: none}
 
-.follow li a:hover{
-	opacity: 0.8
+.follow li a:hover	{opacity: 0.8}
+
+.follow-tw	{background-color: #63bafb}
+.follow-fb	{background-color: #5288f7}
+.follow-gp	{background-color: #f65d4a}
+
+.follow i	{margin-right: 10px;
+	font-size: 24px;
+	vertical-align: middle}
+
+/* 補足説明 */
+.follow-info{
+	margin-top: 0;
+	margin-bottom: 20px;
+	padding: 10px;
+	background-color: #dddddd;
+	font-size: 14px;
+	text-align: center
 }
 
-.follow-tw{background-color: #63bafb;}
-.follow-fb{background-color: #5288f7;}
-.follow-gp{background-color: #f65d4a;}
 
-.follow i {margin-right: 10px;
-font-size:24px;
-vertical-align: middle;}
+/* コピーライト */
+.copyright p	{margin: 0;
+	color: #666666;
+	font-size: 14px}
+
+
+/* BOX5をバーの形にする */
+.box5	{padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #dddddd}
+
+
+/* ボックスの左右 */
+.boxA, .box4, .box5
+	{padding-left: 15px;
+	padding-right: 15px}
+
+
+/* ボックスの上下 */
+.boxA	{padding-top: 20px;
+	padding-bottom: 10px}
+
+.box4	{padding-top: 20px;
+	padding-bottom: 20px}
+
+.box4-1	{padding-bottom: 20px}
 
 
 /* ########### 599px以下 ########### */
@@ -142,7 +147,10 @@ vertical-align: middle;}
 /* ナビゲーション */
 .menu li a	{padding: 10px 7px;
 	font-size: 11px}
+
+
 }
+
 
 /* ########### 768px以上 ########### */
 @media (min-width: 768px) {
@@ -168,29 +176,26 @@ vertical-align: middle;}
 	padding-right: 35px;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	background-color: #aaaaaa;}
+	box-sizing: border-box}
 
-.box4-2	{float: right;
-	width: 30%;
-	background-color: #dddddd;}
+.box4-2	{float: left;
+	width: 30%}
 
 }
+
 
 /* ########### 1190px以上 ########### */
 @media (min-width: 1190px) {
 
 /* 全体の横幅を固定 */
-.box3, .box4 .boxA-inner, .box5-inner{
-	width: 1140px;
+.box3, .box4, .boxA-inner, .box5-inner
+	{width: 1140px;
 	margin-left: auto;
-	margin-right: auto;
-}
+	margin-right: auto}
 
-/* BOXAの下に罫線を挿入 */
-.boxA {
-	margin-bottom: 20px;
-	border-bottom: solid 1px #dddddd;
-}
+/* BOX Aの下に罫線を挿入 */
+.boxA	{margin-bottom: 20px;
+	border-bottom: solid 1px #dddddd}
 
 }
+
